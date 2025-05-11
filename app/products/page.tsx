@@ -1,5 +1,13 @@
 import { Apple, Carrot, Wheat, Egg, Filter } from 'lucide-react';
 import ProductCard from '@/app/components/ProductCard';
+import mango from "@/app/assets/products/Mango.webp";
+import tomato from "@/app/assets/products/tomatoes.jpg";
+import rice from "@/app/assets/products/redrice.avif";
+import egg from "@/app/assets/products/egg.webp";
+import banana from "@/app/assets/products/banana.jpg";
+import potato from "@/app/assets/products/potato.jpg";
+import wheat from "@/app/assets/products/wheatflour.webp";
+import milk from "@/app/assets/products/milk.jpg";
 
 const ProductsPage = () => {
   const categories = [
@@ -35,56 +43,56 @@ const ProductsPage = () => {
       id: 1,
       name: 'জৈব আম',
       price: '২০০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: mango,
       category: 'ফল',
     },
     {
       id: 2,
       name: 'জৈব টমেটো',
       price: '৮০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: tomato,
       category: 'শাকসবজি',
     },
     {
       id: 3,
       name: 'জৈব লাল চাল',
       price: '১২০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: rice,
       category: 'শস্য',
     },
     {
       id: 4,
       name: 'জৈব ডিম',
       price: '১৫ টাকা/পিস',
-      image: '/placeholder-product.jpg',
+      image: egg,
       category: 'ডিম ও দুগ্ধ',
     },
     {
       id: 5,
       name: 'জৈব কলা',
       price: '৬০ টাকা/ডজন',
-      image: '/placeholder-product.jpg',
+      image: banana,
       category: 'ফল',
     },
     {
       id: 6,
       name: 'জৈব আলু',
       price: '৪০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: potato,
       category: 'শাকসবজি',
     },
     {
       id: 7,
       name: 'জৈব গমের আটা',
       price: '৮০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: wheat,
       category: 'শস্য',
     },
     {
       id: 8,
       name: 'জৈব দুধ',
       price: '৭০ টাকা/লিটার',
-      image: '/placeholder-product.jpg',
+      image: milk,
       category: 'ডিম ও দুগ্ধ',
     },
   ];

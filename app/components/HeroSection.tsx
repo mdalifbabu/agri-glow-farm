@@ -1,12 +1,14 @@
-import { Sun, Check, ShoppingBag } from 'lucide-react';
-import Link from 'next/link';
+import { Sun, Check, ShoppingBag } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import herocover from "@/app/assets/herocover.jpg"
 
 const HeroSection = () => {
   const features = [
-    '১০০% জৈব সার্টিফাইড',
-    'কেমিক্যাল মুক্ত',
-    'স্থানীয় কৃষকদের থেকে',
-    'তাজা ও পুষ্টিকর',
+    "১০০% জৈব সার্টিফাইড",
+    "কেমিক্যাল মুক্ত",
+    "স্থানীয় কৃষকদের থেকে",
+    "তাজা ও পুষ্টিকর",
   ];
 
   return (
@@ -47,7 +49,16 @@ const HeroSection = () => {
           </div>
           <div className="hidden md:block">
             <div className="relative">
-              <div className="bg-amber-200 rounded-2xl h-96 w-full"></div>
+              {/* Replace the color div with an actual image */}
+              <div className="relative h-96 w-full overflow-hidden rounded-2xl">
+                <Image
+                  src={herocover} // Update with your image path
+                  alt="AgriGlowFarm জৈব পণ্য"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
               <div className="absolute -bottom-8 -left-8 bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center">
                   <Sun className="h-8 w-8 text-amber-600 mr-2" />

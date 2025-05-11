@@ -1,26 +1,29 @@
-import { Leaf, Users, Award, Truck } from 'lucide-react';
+import { Leaf, Users, Award, Truck } from "lucide-react";
+import Image from "next/image";
+import cover01 from "@/app/assets/cover-1.jpg";
+import cover02 from "@/app/assets/cover-2.jpg";
 
 const AboutPage = () => {
   const features = [
     {
       icon: <Leaf className="h-8 w-8 text-green-600" />,
-      title: '১০০% জৈব',
-      description: 'আমাদের সকল পণ্য জৈব সার্টিফাইড এবং কেমিক্যাল মুক্ত',
+      title: "১০০% জৈব",
+      description: "আমাদের সকল পণ্য জৈব সার্টিফাইড এবং কেমিক্যাল মুক্ত",
     },
     {
       icon: <Users className="h-8 w-8 text-green-600" />,
-      title: 'স্থানীয় কৃষক',
-      description: 'আমরা স্থানীয় কৃষকদের সাথে সরাসরি কাজ করি',
+      title: "স্থানীয় কৃষক",
+      description: "আমরা স্থানীয় কৃষকদের সাথে সরাসরি কাজ করি",
     },
     {
       icon: <Award className="h-8 w-8 text-green-600" />,
-      title: 'মান নিশ্চিত',
-      description: 'সর্বোচ্চ মান নিশ্চিত করতে কঠোর QC প্রক্রিয়া',
+      title: "মান নিশ্চিত",
+      description: "সর্বোচ্চ মান নিশ্চিত করতে কঠোর QC প্রক্রিয়া",
     },
     {
       icon: <Truck className="h-8 w-8 text-green-600" />,
-      title: 'দ্রুত ডেলিভারি',
-      description: 'অর্ডার করার ২৪ ঘন্টার মধ্যে ঢাকায় ডেলিভারি',
+      title: "দ্রুত ডেলিভারি",
+      description: "অর্ডার করার ২৪ ঘন্টার মধ্যে ঢাকায় ডেলিভারি",
     },
   ];
 
@@ -28,7 +31,9 @@ const AboutPage = () => {
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">আমাদের সম্পর্কে</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+            আমাদের সম্পর্কে
+          </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             প্রাকৃতিক - জৈব পণ্যের বিশ্বস্ত উৎস
           </p>
@@ -40,9 +45,9 @@ const AboutPage = () => {
               আমাদের গল্প
             </h2>
             <p className="text-gray-600 mb-4">
-              ২০১৫ সালে প্রাকৃতিক যাত্রা শুরু করে একটি সহজ লক্ষ্য নিয়ে - মানুষকে
-              প্রকৃতিক জৈব পণ্য সরবরাহ করা যা তাদের স্বাস্থ্য ও পরিবেশের জন্য
-              ভালো।
+              ২০১৫ সালে প্রাকৃতিক যাত্রা শুরু করে একটি সহজ লক্ষ্য নিয়ে -
+              মানুষকে প্রকৃতিক জৈব পণ্য সরবরাহ করা যা তাদের স্বাস্থ্য ও পরিবেশের
+              জন্য ভালো।
             </p>
             <p className="text-gray-600 mb-4">
               আমরা বাংলাদেশের বিভিন্ন অঞ্চলের কৃষকদের সাথে সরাসরি কাজ করি যারা
@@ -54,7 +59,16 @@ const AboutPage = () => {
               একটি এবং আমরা আমাদের গ্রাহকদের বিশ্বস্ততা নিয়ে গর্বিত।
             </p>
           </div>
-          <div className="bg-gray-100 rounded-2xl h-96"></div>
+          {/* Replace the color div with an actual image */}
+          <div className="relative h-96 w-full overflow-hidden rounded-2xl">
+            <Image
+              src={cover01} // Update with your image path
+              alt="AgriGlowFarm জৈব পণ্য"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
 
         <div className="mb-16">
@@ -78,7 +92,16 @@ const AboutPage = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="bg-gray-100 rounded-2xl h-96"></div>
+          {/* Replace the color div with an actual image */}
+          <div className="relative h-96 w-full overflow-hidden rounded-2xl">
+            <Image
+              src={cover02} // Update with your image path
+              alt="AgriGlowFarm জৈব পণ্য"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               আমাদের মিশন

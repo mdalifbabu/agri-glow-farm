@@ -1,5 +1,10 @@
 import { Apple, Carrot, Wheat, Egg } from 'lucide-react';
 import ProductCard from './ProductCard';
+import mango from "@/app/assets/products/Mango.webp";
+import tomato from "@/app/assets/products/tomatoes.jpg";
+import rice from "@/app/assets/products/redrice.avif";
+import egg from "@/app/assets/products/egg.webp";
+
 
 const ProductCategory = () => {
   const categories = [
@@ -30,28 +35,28 @@ const ProductCategory = () => {
       id: 1,
       name: 'জৈব আম',
       price: '২০০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: mango,
       category: 'ফল',
     },
     {
       id: 2,
       name: 'জৈব টমেটো',
       price: '৮০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: tomato,
       category: 'শাকসবজি',
     },
     {
       id: 3,
       name: 'জৈব লাল চাল',
       price: '১২০ টাকা/কেজি',
-      image: '/placeholder-product.jpg',
+      image: rice,
       category: 'শস্য',
     },
     {
       id: 4,
       name: 'জৈব ডিম',
       price: '১৫ টাকা/পিস',
-      image: '/placeholder-product.jpg',
+      image: egg,
       category: 'ডিম ও দুগ্ধ',
     },
   ];

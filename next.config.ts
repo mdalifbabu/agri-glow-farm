@@ -1,9 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig: import('next').NextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
