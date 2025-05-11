@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              প্রকৃতির আলো <span className="text-amber-600">আপনার পাতে</span>
+              প্রকৃতির আলো <span className="text-amber-600">আপনার পাশে</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6">
               AgriGlowFarm থেকে জৈব পণ্যের বিশুদ্ধতা উপভোগ করুন। আমাদের পণ্যগুলো
